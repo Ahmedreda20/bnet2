@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- important seo meta tags -->
+    <meta
+      name="description"
+      content="قم الان بتقديم خدمتك والحصول على عملاء جدد , واذا كنت عميل
+فاهلا بك يمكنك عرض الطلبة التي تريدها وسيقوم احد مستخدمين
+المستقليين بتقديم عروضهم عليها ."
+    />
+    <title>Bnet2 | انجز طلبيتك وقم بتقديم خدمتك لمساعدة العملاء</title>
+  </head>
+  <body>
+    <!-- loader container -->
+    <div class="loader_container loader_unactive">
+      <div class="loader_box">
+        <svg class="loader_icon">
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="header_container">
+      <div class="header_box flex_elem wrapper_responsive_lg">
+        <a href="./index.html" class="logo_img">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            title="bnet2 logo image"
+          />
+        </a>
+        <ul class="pages_link_box">
+          <li class="li_elem md_none"><a href="./index.html">الرئيسية</a></li>
+          <li class="li_elem md_none"><a href="./services.html">الخدمات</a></li>
+          <li class="li_elem md_none"><a href="./offers.html">الطلبات</a></li>
+          <li class="li_elem md_none">
+            <a href="./register.html" class="bg_style">تسجيل</a>
+          </li>
+          <li class="li_elem md_none">
+            <a href="./login.html"><i class="far fa-user"></i></a>
+          </li>
+          <li class="li_elem mode_action">
+            <a href="javascript:ChangeMode(0)">
+              <span class="far fa-sun"></span>
+            </a>
+          </li>
+          <li class="li_elem lg_sc">
+            <a href="javascript:void(0)" class="icon_elem flex_elem menu_btn">
+              <span class="menu_icon"></span>
+            </a>
+          </li>
+          <li class="li_elem">
+            <a href="javascript:SearchBox(0)" class="icon_elem flex_elem"
+              ><i class="fas fa-search"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <form class="form_search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="بحث..."
+            required
+            autocomplete="off"
+            spellcheck="true"
+            autocorrect="off"
+            dir="auto"
+            class="search_input"
+          />
+          <span class="btn_search flex_elem">
+            <span class="search_icon"></span>
+          </span>
+        </form>
+      </div>
+
+      <div class="md_sc menu_container">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./services.html">الخدمات</a></li>
+          <li><a href="./offers.html">الطلبات</a></li>
+          <li><a href="./register.html">تسجيل</a></li>
+          <li><a href="./login.html">دخول</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="wrapper_container">
+      <!-- banner -->
+      <div class="banner_container">
+        <div class="banner_box flex_elem">
+          <div class="content_box">
+            <h1 class="title">بي نت <span class="hightlight">2</span></h1>
+            <p class="content">
+              قم الان بتقديم خدمتك والحصول على عملاء جدد , واذا كنت عميل فاهلا
+              بك يمكنك عرض الطلبة التي تريدها وسيقوم احد مستخدمين المستقليين
+              بتقديم عروضهم عليها .
+            </p>
+            <div class="buttons_box">
+              <a href="./register.html" class="banner_btn bg_style"
+                >ابدء الان</a
+              >
+              <a href="#services" class="banner_btn br_style">اعرف المزيد</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- services -->
+
+      <div class="services_box wrapper_responsive_lg" id="services">
+        <h2 class="title">خدماتنا</h2>
+        <div class="services_container grid_elem">
+          <div class="service_item">
+            <img
+              src="assets/images/icons/web_service.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">جميع الخدمات الالكترونية</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/doctor.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">خدمات صحية</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/education.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">خدمات طلابية</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/passport_service.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">خدمات الجوازات</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/shopping_service.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">التجارة الالكترونية</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/train.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">حجز تذاكر قطار الحرمين</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/team_service.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">فريق عمل</p>
+          </div>
+          <div class="service_item">
+            <img
+              src="assets/images/icons/online_learning_service.svg"
+              alt="service image"
+              class="service_img"
+            />
+            <p class="service_title">خدمات التعليم عن بعد</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- newsletter -->
+
+      <div class="newsletter_container flex_elem">
+        <h2 class="title">إشترك ليصلك كل جديد عن خدمات المنصة</h2>
+        <form class="newsletter_form">
+          <div class="form_group grid_elem">
+            <button
+              class="btn_submet"
+              name="submit"
+              type="submit"
+              aria-label="submit newsletter button"
+            >
+              أشتراك
+            </button>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="البريد الالكتروني"
+              autocomplete="off"
+              autocorrect="false"
+              spellcheck="true"
+              required
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer_container">
+      <div class="footer_box wrapper_responsive_lg flex_elem">
+        <div class="footer_item">
+          <a href="./index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="logo"
+              title="bnet2 logo image"
+            />
+          </a>
+          <p class="content">
+            منصة عربية لبيع و شراء الخدمات المصغرة في جميع المجالات
+          </p>
+          <ul>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">روابط</span>
+            </li>
+            <li>
+              <a href="./index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="./services.html">الخدمات</a>
+            </li>
+            <li>
+              <a href="./offers.html">الطلبات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">ابقى على تواصل</span>
+            </li>
+            <li class="contact_links">
+              <a href="#">
+                <span class="fas fa-map-marker-alt"></span>
+                اﻟﻤﻤﻠﻜﻠﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ اﻟﻤﺪﻳﻨﺔ اﻟﻤﻨﻮرة اﻟﻌﺰﻳﺰﻳﻪ
+              </a>
+            </li>
+            <li class="contact_links">
+              <a href="tel:00966551756476"
+                ><span class="fas fa-phone"></span>00966551756476</a
+              >
+            </li>
+            <li class="contact_links">
+              <a href="mailto:bnet1420@gmail.com"
+                ><span class="fas fa-envelope"></span>bnet1420@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_box">
+        <p class="copy_content">
+          جميع الحقوق © محفوظة لدى <a href="./index.html">Bnet2</a> 2021
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="assets/script/main.js" type="text/javascript"></script>
+  </body>
+</html>

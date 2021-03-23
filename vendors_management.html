@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/intl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- important seo meta tags -->
+    <meta
+      name="description"
+      content="قم الان بتقديم خدمتك والحصول على عملاء جدد , واذا كنت عميل
+فاهلا بك يمكنك عرض الطلبة التي تريدها وسيقوم احد مستخدمين
+المستقليين بتقديم عروضهم عليها ."
+    />
+    <title>Bnet2 | إدارة المشاريع</title>
+  </head>
+  <body>
+    <!-- loader container -->
+    <div class="loader_container loader_unactive">
+      <div class="loader_box">
+        <svg class="loader_icon">
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="header_container header_active_another">
+      <div class="header_box flex_elem wrapper_responsive_lg">
+        <a href="./index.html" class="logo_img">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            title="bnet2 logo image"
+          />
+        </a>
+        <ul class="pages_link_box">
+          <li class="li_elem md_none_admin">
+            <a href="./index.html">الرئيسية</a>
+          </li>
+          <li class="li_elem md_none_admin">
+            <a href="./services.html">الخدمات</a>
+          </li>
+          <li class="li_elem md_none_admin">
+            <a href="./offers.html">الطلبات</a>
+          </li>
+          <li class="li_elem md_none_admin">
+            <a href="./management.html">ادارة المشروعات</a>
+          </li>
+          <li class="li_elem elem_manag md_none_admin">
+            <span class="title">الادراة</span>
+            &ThinSpace;
+            <i class="fas fa-angle-down"></i>
+            <ul class="dropdown">
+              <li>
+                <a href="./dashboard.html">إدارة الموقع</a>
+              </li>
+              <li>
+                <a href="./vendors_management.html">إدارة المشاريع</a>
+              </li>
+              <li>
+                <a href="./buyers_management.html">إدارة المشتريات</a>
+              </li>
+            </ul>
+          </li>
+          <li class="li_elem md_none_admin">
+            <a href="./create.html">خدمة جديدة</a>
+          </li>
+          <li class="li_elem pd_style">
+            <a href="javascript:open_notificationsContainer(0)"
+              ><i class="far fa-bell"></i
+            ></a>
+            <div class="notifications_container">
+              <div class="notifications_box grid_elem">
+                <div class="notification_header grid_elem">
+                  <h4 class="title">الإشعارات</h4>
+                  <button
+                    class="btn_close"
+                    name="close"
+                    aria-label="close button"
+                  >
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+                <div class="notifications_content">
+                  <div class="notification_box grid_elem">
+                    <div class="user_img">
+                      <img
+                        src="assets/images/banner_img.png"
+                        alt="user image"
+                      />
+                    </div>
+                    <div class="notify_content">
+                      <a href="#" class="_title"> Adams Max </a>
+                      <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero, repellat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="li_elem pd_style btn_admin">
+            <a href="javascript:void(0)" class="icon_elem flex_elem menu_btn">
+              <span class="menu_icon"></span>
+            </a>
+          </li>
+          <li class="li_elem pd_style">
+            <a href="javascript:SearchBox(0)" class="icon_elem flex_elem"
+              ><i class="fas fa-search"></i
+            ></a>
+          </li>
+          <li class="li_elem">
+            <a href="javascript:open_dropdown(0)" class="user_img">
+              <img src="assets/images/icons/user.svg" alt="user image" />
+            </a>
+            <div class="user_info_dropdown">
+              <ul>
+                <li>
+                  <a href="./user.html" dir="auto">Allan Watson</a>
+                </li>
+                <li>
+                  <a href="./payment.html" dir="auto">$0.00</a>
+                </li>
+                <li>
+                  <a href="./settings.html" dir="auto">تعديل الحساب</a>
+                </li>
+                <li>
+                  <a href="#" dir="auto">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <form class="form_search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="بحث..."
+            required
+            autocomplete="off"
+            spellcheck="true"
+            autocorrect="off"
+            dir="auto"
+            class="search_input"
+          />
+          <span class="btn_search flex_elem">
+            <span class="search_icon"></span>
+          </span>
+        </form>
+      </div>
+
+      <div class="md_sc menu_container lg_container_admin">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./services.html">الخدمات</a></li>
+          <li><a href="./offers.html">الطلبات</a></li>
+          <li>
+            <a href="./dasboard.html">إدارة الموقع</a>
+          </li>
+          <li>
+            <a href="./vendors_management.html">إدارة المشاريع</a>
+          </li>
+          <li>
+            <a href="./buyers_management.html">إدارة المشتريات</a>
+          </li>
+          <li><a href="./managenment.html">ادارة المشروعات</a></li>
+          <li><a href="./create.html">خدمة جديدة</a></li>
+          <li><a href="./contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="wrapper_container wrapper_responsive_lg">
+      <div class="dashboard_container">
+          <div
+          class="dasboard_box dashboard_style"
+          data-type="new_orders"
+          id="new_orders"
+        >
+          <h4 class="title">
+            <a href="#new_orders""><i class="fas fa-hashtag"></i></a
+            > طلبات الخدمات الجديدة
+          </h4>
+
+          <div class="table_container_hidden">
+            <table class="table_container">
+              <thead>
+                <th class="first_style">#</th>
+                <th>عنوان الخدمة</th>
+                <th>المشتري</th>
+                <th>التاريخ</th>
+                <th>مدة الانجاز</th>
+                <th>الميزانية</th>
+                <th>الاجراء</th>
+              </thead>
+              <tbody class="data_inside"></tbody>
+            </table>
+            <div class="pagination_container"></div>
+          </div>
+        </div>
+        <div
+          class="dasboard_box dashboard_style"
+          data-type="projects_management"
+          id="projects_management"
+        >
+          <h4 class="title">
+            <a href="#projects_management"><i class="fas fa-hashtag"></i></a
+            >إدارة المشاريع
+          </h4>
+
+          <div class="table_container_hidden">
+            <table class="table_container">
+              <thead>
+                <th class="first_style">#</th>
+                <th>العنوان</th>
+                <th>البائع</th>
+                <th>المشتري</th>
+                <th>التاريخ</th>
+                <th>مدة الانجاز</th>
+                <th>الميزانية</th>
+                <th>الحالة</th>
+                <th>الاجراء</th>
+              </thead>
+              <tbody class="data_inside"></tbody>
+            </table>
+            <div class="pagination_container"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer_container">
+      <div class="footer_box wrapper_responsive_lg flex_elem">
+        <div class="footer_item">
+          <a href="./index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="logo"
+              title="bnet2 logo image"
+            />
+          </a>
+          <p class="content">
+            منصة عربية لبيع و شراء الخدمات المصغرة في جميع المجالات
+          </p>
+          <ul>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">روابط</span>
+            </li>
+            <li>
+              <a href="./index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="./services.html">الخدمات</a>
+            </li>
+            <li>
+              <a href="./offers.html">الطلبات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">ابقى على تواصل</span>
+            </li>
+            <li class="contact_links">
+              <a href="#">
+                <span class="fas fa-map-marker-alt"></span>
+                اﻟﻤﻤﻠﻜﻠﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ اﻟﻤﺪﻳﻨﺔ اﻟﻤﻨﻮرة اﻟﻌﺰﻳﺰﻳﻪ
+              </a>
+            </li>
+            <li class="contact_links">
+              <a href="tel:00966551756476"
+                ><span class="fas fa-phone"></span>00966551756476</a
+              >
+            </li>
+            <li class="contact_links">
+              <a href="mailto:bnet1420@gmail.com"
+                ><span class="fas fa-envelope"></span>bnet1420@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_box">
+        <p class="copy_content">
+          جميع الحقوق © محفوظة لدى <a href="./index.html">Bnet2</a> 2021
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="assets/script/main.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://pagination.js.org/dist/2.1.5/pagination.min.js"></script>
+    <script src="assets/script/vender_management.js"></script>
+
+    <script type="text/javascript">
+      open_dropdown = () =>
+        document
+          .querySelector(".user_info_dropdown")
+          .classList.toggle("active_dropdown");
+      open_notificationsContainer = () =>
+        document
+          .querySelector(".notifications_container")
+          .classList.add("active_notifications");
+
+      document.querySelector(
+        ".notifications_container .btn_close"
+      ).onclick = () =>
+        document
+          .querySelector(".notifications_container")
+          .classList.remove("active_notifications");
+    </script>
+  </body>
+</html>

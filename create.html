@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/intl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- important seo meta tags -->
+    <meta
+      name="description"
+      content="قم الان بتقديم خدمتك والحصول على عملاء جدد , واذا كنت عميل
+فاهلا بك يمكنك عرض الطلبة التي تريدها وسيقوم احد مستخدمين
+المستقليين بتقديم عروضهم عليها ."
+    />
+    <title>Bnet2 | خدمة جديدة</title>
+  </head>
+  <body>
+    <!-- loader container -->
+    <div class="loader_container loader_unactive">
+      <div class="loader_box">
+        <svg class="loader_icon">
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="header_container header_active_another">
+      <div class="header_box flex_elem wrapper_responsive_lg">
+        <a href="./index.html" class="logo_img">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            title="bnet2 logo image"
+          />
+        </a>
+        <ul class="pages_link_box">
+          <li class="li_elem user_md_none">
+            <a href="./index.html">الرئيسية</a>
+          </li>
+          <li class="li_elem user_md_none">
+            <a href="./services.html">الخدمات</a>
+          </li>
+          <li class="li_elem user_md_none">
+            <a href="./offers.html">الطلبات</a>
+          </li>
+          <li class="li_elem user_md_none">
+            <a href="./management.html">ادارة المشروعات</a>
+          </li>
+          <li class="li_elem user_md_none">
+            <a href="./create.html">خدمة جديدة</a>
+          </li>
+          <li class="li_elem pd_style">
+            <a href="javascript:open_notificationsContainer(0)"
+              ><i class="far fa-bell"></i
+            ></a>
+            <div class="notifications_container">
+              <div class="notifications_box grid_elem">
+                <div class="notification_header grid_elem">
+                  <h4 class="title">الإشعارات</h4>
+                  <button
+                    class="btn_close"
+                    name="close"
+                    aria-label="close button"
+                  >
+                    <i class="fa fa-times"></i>
+                  </button>
+                </div>
+                <div class="notifications_content">
+                  <div class="notification_box grid_elem">
+                    <div class="user_img">
+                      <img
+                        src="assets/images/banner_img.png"
+                        alt="user image"
+                      />
+                    </div>
+                    <div class="notify_content">
+                      <a href="#" class="_title"> Adams Max </a>
+                      <p class="content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Libero, repellat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="li_elem pd_style user_ele">
+            <a href="javascript:void(0)" class="icon_elem flex_elem menu_btn">
+              <span class="menu_icon"></span>
+            </a>
+          </li>
+          <li class="li_elem pd_style">
+            <a href="javascript:SearchBox(0)" class="icon_elem flex_elem"
+              ><i class="fas fa-search"></i
+            ></a>
+          </li>
+          <li class="li_elem">
+            <a href="javascript:open_dropdown(0)" class="user_img">
+              <img src="assets/images/icons/user.svg" alt="user image" />
+            </a>
+            <div class="user_info_dropdown">
+              <ul>
+                <li>
+                  <a href="./user.html" dir="auto">Allan Watson</a>
+                </li>
+                <li>
+                  <a href="./payment.html" dir="auto">$0.00</a>
+                </li>
+                <li>
+                  <a href="./settings.html" dir="auto">تعديل الحساب</a>
+                </li>
+                <li>
+                  <a href="#" dir="auto">تسجيل الخروج</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <form class="form_search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="بحث..."
+            required
+            autocomplete="off"
+            spellcheck="true"
+            autocorrect="off"
+            dir="auto"
+            class="search_input"
+          />
+          <span class="btn_search flex_elem">
+            <span class="search_icon"></span>
+          </span>
+        </form>
+      </div>
+
+      <div class="md_sc menu_container">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./services.html">الخدمات</a></li>
+          <li><a href="./offers.html">الطلبات</a></li>
+          <li><a href="./managenment.html">ادارة المشروعات</a></li>
+          <li><a href="./create.html">خدمة جديدة</a></li>
+          <li><a href="./contact.html">اتصل بنا</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="wrapper_container">
+      <div class="creation_container">
+        <div class="creatino_box auth_container">
+          <form class="modify_form">
+            <h3 class="title">إنشاء خدمة جديدة</h3>
+            <div class="form_group">
+              <label for="title"
+                >عنوان الخدمة <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                name="title"
+                id="title"
+                required
+                autocomplete="off"
+                autofocus
+                class="creation_elems"
+                placeholder="..."
+              />
+            </div>
+            <div class="form_group">
+              <label for="services_select"
+                >الفئة <span class="required">*</span></label
+              >
+              <select name="services_select" id="services_select">
+                <option value="1">جميع الخدمات الإلكترونية</option>
+                <option value="2">خدمات التجارة</option>
+                <option value="3">خدمات العدل</option>
+                <option value="4">خدمات الجوازات</option>
+                <option value="5">خدمات العمل</option>
+                <option value="6">خدمات التعليم</option>
+                <option value="7">خدمات الصحة</option>
+                <option value="8">خدمات البلديه</option>
+                <option value="9">خدمات المرور</option>
+                <option value="10">خدمات اﻷموال</option>
+                <option value="11">خدمات ابشر</option>
+                <option value="12">حجز تذاكر السفر</option>
+                <option value="13">حجز تذاكر قطار الحرمين</option>
+                <option value="14">خدمات طاقات</option>
+                <option value="15">خدمات الزكاه و الدخل</option>
+                <option value="16">خدمات الاستقدام</option>
+                <option value="17">خدمات مساند</option>
+                <option value="18">خدمات تأمين السيارات</option>
+                <option value="19">خدمات تأمين المنشأت</option>
+                <option value="20">خدمات التأمينات الإجتماعية</option>
+                <option value="21">خدمات الإسكان</option>
+                <option value="22">خدمات طلابية</option>
+                <option value="23">خدمات أخرى</option>
+              </select>
+            </div>
+            <div class="form_group">
+              <label for="uploader" class="uploader_thumb">
+                <span class="far fa-image"></span>
+                صورة توضيحية للخدمة
+              </label>
+              <input
+                type="file"
+                name="id"
+                id="uploader"
+                hidden
+                aria-hidden="true"
+                required
+              />
+            </div>
+            <div class="form_group preview_container"></div>
+            <div class="form_group">
+              <label for="price"> المبلغ <span class="required">*</span></label>
+              <input
+                type="number"
+                name="price"
+                id="price"
+                required
+                autocomplete="off"
+                autofocus
+                class="creation_elems"
+                placeholder="$1"
+                min="1"
+              />
+            </div>
+            <div class="form_group">
+              <label for="desc"
+                >تفاصيل الخدمة<span class="required">*</span></label
+              >
+              <textarea
+                id="desc"
+                name="desc"
+                placeholder="..."
+                class="creation_elems"
+              ></textarea>
+            </div>
+            <div class="form_group">
+              <button
+                class="btn_submit"
+                name="submit"
+                type="submit"
+                aria-label="submit button"
+              >
+                نشر الخدمة
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer_container">
+      <div class="footer_box wrapper_responsive_lg flex_elem">
+        <div class="footer_item">
+          <a href="./index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="logo"
+              title="bnet2 logo image"
+            />
+          </a>
+          <p class="content">
+            منصة عربية لبيع و شراء الخدمات المصغرة في جميع المجالات
+          </p>
+          <ul>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">روابط</span>
+            </li>
+            <li>
+              <a href="./index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="./services.html">الخدمات</a>
+            </li>
+            <li>
+              <a href="./offers.html">الطلبات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">ابقى على تواصل</span>
+            </li>
+            <li class="contact_links">
+              <a href="#">
+                <span class="fas fa-map-marker-alt"></span>
+                اﻟﻤﻤﻠﻜﻠﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ اﻟﻤﺪﻳﻨﺔ اﻟﻤﻨﻮرة اﻟﻌﺰﻳﺰﻳﻪ
+              </a>
+            </li>
+            <li class="contact_links">
+              <a href="tel:00966551756476"
+                ><span class="fas fa-phone"></span>00966551756476</a
+              >
+            </li>
+            <li class="contact_links">
+              <a href="mailto:bnet1420@gmail.com"
+                ><span class="fas fa-envelope"></span>bnet1420@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_box">
+        <p class="copy_content">
+          جميع الحقوق © محفوظة لدى <a href="./index.html">Bnet2</a> 2021
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="assets/script/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      open_dropdown = () =>
+        document
+          .querySelector(".user_info_dropdown")
+          .classList.toggle("active_dropdown");
+      open_notificationsContainer = () =>
+        document
+          .querySelector(".notifications_container")
+          .classList.add("active_notifications");
+
+      document.querySelector(
+        ".notifications_container .btn_close"
+      ).onclick = () =>
+        document
+          .querySelector(".notifications_container")
+          .classList.remove("active_notifications");
+    </script>
+    <script type="text/javascript">
+      const uploader = document.querySelector("#uploader");
+      const uploaderContainer = document.querySelector(".preview_container");
+      uploader.onchange = ({ target }) => {
+        let file = target.files[0];
+
+        if (file) {
+          uploaderContainer.innerHTML += `<div class="image_preview_box grid_elem">
+              <img
+                src="${URL.createObjectURL(file)}"
+                alt="${file.name}"
+                title="${file.name}"
+                class="image_preview"
+              />
+              <div class="image_info">
+                <span class="image_name" dir="auto">${file.name}</span>
+                <a
+                  href="javascript:void(0)"
+                  class="delete_btn flex_elem"
+                >
+                  <span class="far fa-trash-alt"></span>
+                </a>
+              </div>
+            </div>`;
+
+          const deletebtns = document.querySelectorAll(".delete_btn");
+          deletebtns.forEach((deletebtn) => {
+            deletebtn.onclick = () => {
+              return (
+                deletebtn.parentElement.parentNode.remove(),
+                (file = ""),
+                (target.value = ""),
+                (target.files = null)
+              );
+            };
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

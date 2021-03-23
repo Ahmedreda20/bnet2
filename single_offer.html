@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/intl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+
+    <!-- important seo meta tags -->
+    <meta
+      name="description"
+      content="قم الان بتقديم خدمتك والحصول على عملاء جدد , واذا كنت عميل
+فاهلا بك يمكنك عرض الطلبة التي تريدها وسيقوم احد مستخدمين
+المستقليين بتقديم عروضهم عليها ."
+    />
+    <title>Bnet2 | تصميم شعار شركة
+</title>
+  </head>
+  <body>
+    <!-- loader container -->
+    <div class="loader_container loader_unactive">
+      <div class="loader_box">
+        <svg class="loader_icon">
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+          <circle cy="25" cx="25" r="20" class="circle_loader"></circle>
+        </svg>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="header_container header_active_another">
+      <div class="header_box flex_elem wrapper_responsive_lg">
+        <a href="./index.html" class="logo_img">
+          <img
+            src="assets/images/logo.png"
+            alt="logo"
+            title="bnet2 logo image"
+          />
+        </a>
+        <ul class="pages_link_box">
+          <li class="li_elem md_none"><a href="./index.html">الرئيسية</a></li>
+          <li class="li_elem md_none"><a href="./services.html">الخدمات</a></li>
+          <li class="li_elem md_none"><a href="./offers.html">الطلبات</a></li>
+          <li class="li_elem md_none">
+            <a href="./register.html" class="bg_style">تسجيل</a>
+          </li>
+          <li class="li_elem md_none">
+            <a href="./login.html"><i class="far fa-user"></i></a>
+          </li>
+          <li class="li_elem mode_action">
+            <a href="javascript:ChangeMode(0)">
+              <span class="far fa-sun"></span>
+            </a>
+          </li>
+          <li class="li_elem lg_sc">
+            <a href="javascript:void(0)" class="icon_elem flex_elem menu_btn">
+              <span class="menu_icon"></span>
+            </a>
+          </li>
+          <li class="li_elem">
+            <a href="javascript:SearchBox(0)" class="icon_elem flex_elem"
+              ><i class="fas fa-search"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="search_box">
+        <form class="form_search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="بحث..."
+            required
+            autocomplete="off"
+            spellcheck="true"
+            autocorrect="off"
+            dir="auto"
+            class="search_input"
+          />
+          <span class="btn_search flex_elem">
+            <span class="search_icon"></span>
+          </span>
+        </form>
+      </div>
+
+      <div class="md_sc menu_container">
+        <ul>
+          <li><a href="./index.html">الرئيسية</a></li>
+          <li><a href="./services.html">الخدمات</a></li>
+          <li><a href="./offers.html">الطلبات</a></li>
+          <li><a href="./register.html">تسجيل</a></li>
+          <li><a href="./login.html">دخول</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="wrapper_container wrapper_responsive_lg">
+      <div class="details_container grid_elem">
+          <div class="details_box">
+              <img src="assets/images/banner_img.png" alt="service_img" class="service_img">
+              <h3 class="service_title">
+                 تصميم شعار شركة
+              </h3>
+              <p class="service_content">
+                  أريد تصميم شعار شركة للرحلات السياحية يكون حديث و جذاب
+              </p>
+              <div class="offer_container">
+                  <h3 class="title">إضافة عرض جديد</h3>
+            
+                  <form  class="offer_form">
+                      <div class="form_group grid_elem both_elem">
+                          <input type="number" name="price" id="price" placeholder="المبلغ">
+                          <input type="number" name="timing" id="timing" placeholder="المدة">
+                      </div>
+                      <div class="form_group">
+                          <textarea name="desc" id="desc" placeholder="تفاصيل العرض.."></textarea>
+                      </div>
+                      <div class="form_group">
+                          <button class="btn_save" name="submit offer" aria-label="submit button">
+                              تقديم عرضك
+                          </button>
+                      </div>
+                  </form>
+              </div>
+
+              <div class="offers_container">
+                  <h3 class="title">العروض</h3>
+                  <div class="offer_box grid_elem">
+                      <div class="user_img_box flex_elem">
+                          <img src="assets/images/6909.jpg" alt="user image" class="user_img">
+                      </div>
+                    <div class="user_content_offer">
+                        <a href="./user.html" class="user_name">
+                            Mohammed Khaled
+                        </a>
+                        <span class="date">
+                            <i class="far fa-clock"></i>
+                            منذ يومين
+                        </span>
+                        <p class="content">
+                            لقد تم اعداد هذه السياسه لمساعدتكم في تفهم طبيعة البيانات التي نقوم بتجميعها منكم عند زيارتكم لموقعنا لخدمتكم وكيفية تعاملنا مع هذه البينات الشخصيه.. تم إنشاء الإتفاقية بناء على نظام التعامالت الإلكترونية. تخضع البنود والشروط والأحكام والمنازعات القانونية للقوانين والتشريعات والأنظمة المعمول بها في المملكة العربية السعودية.
+
+
+                        </p>
+                    </div>
+                  </div>
+                  <!-- <div class="error_msg">
+                      للاسف يجب إنشاء حساب لبائع حتى تتمكن من تقديم عرض كاباقي المشتريين 😢
+                  </div>
+                  <p class="empty_offers">
+                      لا يوجد عروض تم تقديمها حتى الان , يمكنك إنشاء عرض وكن اول مشتري لتلك الطلبية 😊
+                  </p> -->
+              </div>
+          </div>
+          <div class="details_box buyer_info">
+              <table>
+                  <tbody>
+                      <tr>
+                          <td>الميزانية:</td>
+                          <td>0 ر.س</td>
+                      </tr>
+                      <tr>
+                          <td>مدة التنفيذ:</td>
+                          <td>2 يوم</td>
+                      </tr>
+                      <trفق>
+                          <td>عدد العروض:</td>
+                          <td>0</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">حول المشتري</td>
+                    </tr>
+                    <tr>
+                        <td>عدد العملاء:</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>البلد:</td>
+                        <td>غير محدد</td>
+                    </tr>
+                    <tr>
+                        <td>المستوى:</td>
+                        <td>مشتري جديد</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            شارك الطلبية
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div class="social_group flex_elem">
+                                <a href="#" class="social_link flex_elem">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social_link flex_elem">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social_link flex_elem">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social_link flex_elem">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </div>
+                            <input type="text" name="share_link" id="share_link" placeholder="Loading link..." readonly>
+                        </td>
+                    </tr>
+                  </tbody>
+              </table>
+          </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer_container">
+      <div class="footer_box wrapper_responsive_lg flex_elem">
+        <div class="footer_item">
+          <a href="./index.html">
+            <img
+              src="assets/images/logo.png"
+              alt="logo"
+              title="bnet2 logo image"
+            />
+          </a>
+          <p class="content">
+            منصة عربية لبيع و شراء الخدمات المصغرة في جميع المجالات
+          </p>
+          <ul>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="social_links">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">روابط</span>
+            </li>
+            <li>
+              <a href="./index.html">الرئيسية</a>
+            </li>
+            <li>
+              <a href="./services.html">الخدمات</a>
+            </li>
+            <li>
+              <a href="./offers.html">الطلبات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <ul>
+            <li>
+              <span class="title">ابقى على تواصل</span>
+            </li>
+            <li class="contact_links">
+              <a href="#">
+                <span class="fas fa-map-marker-alt"></span>
+                اﻟﻤﻤﻠﻜﻠﺔ اﻟﻌﺮﺑﻴﺔ اﻟﺴﻌﻮدﻳﺔ اﻟﻤﺪﻳﻨﺔ اﻟﻤﻨﻮرة اﻟﻌﺰﻳﺰﻳﻪ
+              </a>
+            </li>
+            <li class="contact_links">
+              <a href="tel:00966551756476"
+                ><span class="fas fa-phone"></span>00966551756476</a
+              >
+            </li>
+            <li class="contact_links">
+              <a href="mailto:bnet1420@gmail.com"
+                ><span class="fas fa-envelope"></span>bnet1420@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_box">
+        <p class="copy_content">
+          جميع الحقوق © محفوظة لدى <a href="./index.html">Bnet2</a> 2021
+        </p>
+      </div>
+    </footer>
+    <!-- script -->
+    <script src="assets/script/main.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        const input_share =  document.getElementById('share_link');
+
+        window.onload = () =>{
+            input_share.value = window.location.href;
+        }
+        input_share.onclick = ({target})=>{
+            if(navigator.clipboard){
+                navigator.clipboard.writeText(target.value);
+            }
+        }
+    </script>
+  </body>
+</html>
