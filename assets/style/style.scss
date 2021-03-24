@@ -67,6 +67,9 @@ $BrowserSupport: (webkit moz ms o);
 
 @mixin radius($value) {
     border-radius: $value;
+    @each $pro in $BrowserSupport {
+        #{"-" + $pro + "-"}border-radius: $value;
+    }
 }
 
 @mixin transition($value , $property) {
@@ -103,7 +106,13 @@ body , html{
     font-family: var(--fontFamilyMedium);
     font-size: var(--NormalFontSize);
 }
-
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--IconsColor);
+    @include radius(100px);
+}
 img , svg , canvas , video{
     pointer-events: none;
 }
