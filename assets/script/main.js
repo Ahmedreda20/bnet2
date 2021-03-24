@@ -66,9 +66,9 @@ window.addEventListener("load", () => {
 function ChangeHeaderClassName() {
   let windowHeight = window.innerHeight;
   if (window.scrollY >= windowHeight - 60) {
-    return header_box.classList.add("header_active");
+    return header_box.classList.replace("home_page_header", "header_active");
   } else {
-    return header_box.classList.remove("header_active");
+    return header_box.classList.replace("header_active", "home_page_header");
   }
 }
 
