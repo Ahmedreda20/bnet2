@@ -843,9 +843,9 @@ img, svg, canvas, video {
 .banner_container {
   display: block;
   width: 100%;
-  height: var(--ResponsiveWrapperHeight);
   background-color: var(--WhiteColor);
   position: relative;
+  padding: 100px 10px;
 }
 @media (max-width: 778px) {
   .banner_container {
@@ -1068,7 +1068,7 @@ img, svg, canvas, video {
 }
 .services_box .services_container {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 30px;
   height: auto;
 }
 .services_box .services_container .service_img {
