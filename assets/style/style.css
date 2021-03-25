@@ -454,7 +454,7 @@ img, svg, canvas, video {
   -o-transition: 0.3s ease-in-out;
 }
 .header_container .header_box .pages_link_box .li_elem .user_info_dropdown a {
-  color: var(--TextColor);
+  color: var(--TextColor) !important;
 }
 .header_container .header_box .pages_link_box .li_elem .user_info_dropdown li {
   padding: 5px 10px;
@@ -1271,6 +1271,10 @@ img, svg, canvas, video {
   width: 100%;
   font-size: 16px;
   cursor: pointer;
+}
+.auth_container .form_group .btn_form[disabled=true] {
+  opacity: 0.5;
+  cursor: no-drop;
 }
 .auth_container .form_group .uploader_thumb {
   padding: 8px 15px;
@@ -2897,6 +2901,24 @@ img, svg, canvas, video {
   -o-border-radius: 10px;
   cursor: pointer;
   pointer-events: all;
+}
+.dashboard_container .dashboard_style .table_container th .btn_dashboard_form, .dashboard_container .dashboard_style .table_container td .btn_dashboard_form {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  color: var(--WhiteColor);
+  font-size: 16px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.dashboard_container .dashboard_style .table_container th .active_btn, .dashboard_container .dashboard_style .table_container td .active_btn {
+  background-color: var(--LightGreenColor);
+}
+.dashboard_container .dashboard_style .table_container th .cancel_btn, .dashboard_container .dashboard_style .table_container td .cancel_btn {
+  background-color: var(--errorColor);
 }
 .dashboard_container .dashboard_style .table_container tr:nth-child(even) {
   background-color: var(--lightGray);

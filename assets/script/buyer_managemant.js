@@ -115,9 +115,10 @@ CollectNewServicesOrders = (items, container, paginationBox) => {
                    <td>${item.date}</td>
                    <td>${item.timing}</td>
                    <td>${item.budget} ر.س</td>
-                    <td><input type="checkbox" name="project_${
-                      item.id || index
-                    }" id="action_project${item.id || index}" /></td>
+                    <td><form>
+                      <button class="btn_dashboard_form cancel_btn" name="cancel" aria-label="cancel button" id="cancel_btn" data-user-id="${item.id}"></button>
+                      <button class="btn_dashboard_form active_btn" name="active" aria-label="active button" id="active_btn" data-user-id="${item.id}"></button>
+                    </form></td>
             </tr>`;
         });
 

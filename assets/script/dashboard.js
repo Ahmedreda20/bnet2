@@ -658,7 +658,12 @@ CollectAuthentications = (items, container, paginationBox) => {
                       class="id_user_img"
                     />
                   </td>
-                  <td>${item.auth === true ? "تم" : "لم يتم"}</td>
+                  <td>
+                    <form>
+                      <button class="btn_dashboard_form cancel_btn" name="cancel" aria-label="cancel button" id="cancel_btn" data-user-id="${item.id}">رفض</button>
+                      <button class="btn_dashboard_form active_btn" name="active" aria-label="active button" id="active_btn" data-user-id="${item.id}">مصادقة</button>
+                    </form>
+                  </td>
                 </tr>`;
         });
 

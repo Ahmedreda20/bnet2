@@ -7,7 +7,6 @@ const md_container = document.querySelector(".menu_container");
 const header_box = document.querySelector(".header_container");
 const mode_elem = document.querySelector(".mode_action span");
 const bdy = document.querySelector("body");
-
 var loaderTimer = 100;
 
 // window.addEventListener("DOMContentLoaded", () => loaderContainerMethod(true));

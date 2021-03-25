@@ -424,7 +424,7 @@ img , svg , canvas , video{
                     @include translate(0, 10%);
                     @include transition(0.3s, ease-in-out);
                     a{
-                        color: var(--TextColor);
+                        color: var(--TextColor) !important;
                     }
                     li{
                         padding: 5px 10px;
@@ -1074,6 +1074,10 @@ img , svg , canvas , video{
             width: 100%;
             font-size: 16px;
             cursor: pointer;
+        }
+        .btn_form[disabled="true"]{
+            opacity: 0.5;
+                cursor: no-drop;
         }
         .uploader_thumb{
             padding: 8px 15px;
@@ -2413,12 +2417,27 @@ img , svg , canvas , video{
                     cursor: pointer; 
                     pointer-events: all;
                 }
+                .btn_dashboard_form{
+                    padding: 5px 10px;
+                    border: none;
+                    cursor: pointer;
+                    color: var(--WhiteColor);
+                    font-size: 16px;
+                    @include radius(5px);
+                }
+                .active_btn{
+                    background-color: var(--LightGreenColor);
+                }
+                .cancel_btn{
+                    background-color: var(--errorColor);
+                }
             }
             tr{
                 &:nth-child(even){
                     background-color: var(--lightGray);
                 }
             }
+            
         }
         .pagination_container{
             display: table;
