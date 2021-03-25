@@ -316,6 +316,24 @@ img , svg , canvas , video{
                 a{
                     text-decoration: none;
                 }
+                .messages_length{
+                    position: absolute;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    text-align: -webkit-center;
+                    padding: 1px 3px;
+                    min-width: 20px;
+                    @include radius(100px);
+                    background-color: var(--errorColor);
+                    color: var(--WhiteColor);
+                    font-size: 14px;
+                    top: -7px;
+                    right: -5px;
+                    box-shadow: 0 0 0 3px var(--TextColor);
+                    -webkit-box-shadow: 0 0 0 3px var(--TextColor);
+                    -moz-box-shadow: 0 0 0 3px var(--TextColor);
+                }
                 .icon_elem{
                     width: 35px;
                     height: 35px;
@@ -560,7 +578,8 @@ img , svg , canvas , video{
                 }
             }
             .lg_sc{
-                @media (min-width: 668px){
+                padding: 0 !important;
+                @media (min-width: 860px){
                     display: none;
                 }
             }
@@ -747,6 +766,95 @@ img , svg , canvas , video{
             }
         }
     }
+    .chat_active{
+         transform: translateX(0) !important;
+        -webkit-transform: translateX(0) !important;
+        -moz-transform: translateX(0) !important;
+        -ms-transform: translateX(0) !important;
+        -o-transform: translateX(0) !important;
+        opacity: 1 !important;
+        pointer-events: all !important;
+        visibility: visible !important;
+
+    }
+    .chat_container_wrapper{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 350px;
+        background-color: var(--lightGray);
+        @include translate(0, 10%);
+        @include transition(0.4s, ease-in-out);
+         opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        @media (max-width: 360px){width: 100%;}
+        .chat_content{
+            padding: 10px;
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            overflow: hidden auto;
+            -webkit-overflow-scrolling: touch;
+            .chat_box{
+                width: 100%;
+                padding: 10px;
+                background-color: var(--WhiteColor);
+                @include radius(10px);
+                height: auto;
+                grid-template-columns: 50px auto;
+                gap: 10px;
+                margin: 10px 0;
+                &:first-child{
+                    margin-top: 0;
+                }
+                .user_image{
+                    width: 100%;
+                    height: 50px;
+                    @include radius(100px);
+                    background-color: var(--PlaceholderColor);
+                    overflow: hidden;
+                    -webkit-overflow-scrolling: touch;
+                    .chat{display: block; width: 100%; height: 100%;}
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        -o-object-fit: cover;
+                    }
+                }
+                .username{
+                    color: var(--blueColor) !important;
+                    text-decoration: none;
+                }
+                .content{
+                    padding: 10px 0;
+                    color: var(--TextColor); 
+                }
+                .date_chat{
+                    color: var(--IconsColor);
+                    font-size: 14px;
+                }
+            }
+            &::-webkit-scrollbar{
+                width: 8px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: var(--IconsColor);
+                @include radius(100px);
+            }
+        }
+        .all_chats{
+            width: 100%;
+            color: var(--blueColor) !important;
+            text-decoration: none;
+            text-align: center;
+            text-align: -webkit-center;
+            background-color: var(--WhiteColor);
+            padding: 5px 10px;
+            display: block;
+        }
+    }
     
     .active_menu_container{
         transform: rotateX(0);
@@ -757,6 +865,7 @@ img , svg , canvas , video{
         opacity: 1;
         pointer-events: all;
         visibility: visible;
+        
     }
 }
 .banner_container{
